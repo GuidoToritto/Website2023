@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Banner from "../../images/clothes/banner.png";
-import video01 from "../../images/clothes/video01.mp4";
-import video02 from "../../images/clothes/video02.mov";
+import video01 from "../../images/clothes/video01_1.mp4";
+import video02 from "../../images/clothes/video02.mp4";
 import img01 from "../../images/clothes/img01.png";
 import img02 from "../../images/clothes/img02.png";
 import leather01 from "../../images/clothes/Leather/1.png";
@@ -16,7 +16,7 @@ import leather04 from "../../images/clothes/Leather/04.png";
 import avatar01 from "../../images/clothes/AvatarAndClothes/01.png";
 import avatar02 from "../../images/clothes/AvatarAndClothes/02.png";
 import avatar03 from "../../images/clothes/AvatarAndClothes/03.gif";
-import video03 from "../../images/clothes/video03.mp4";
+import video03 from "../../images/clothes/video03_1.mp4";
 
 export const Clothes = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,7 +48,7 @@ export const Clothes = () => {
           onClick={() => setIsOpen(false)}
         >
           <img
-            class="hover"
+            class="hover card"
             src={selectedImage}
             style={{ maxHeight: "90vh", maxWidth: "90vw" }}
           />
@@ -56,112 +56,116 @@ export const Clothes = () => {
       )}
       <br />
       <br />
-      <img
-        src={Banner}
-        alt=""
-        className="banner zoom img-zoom w-100 img-hover"
-      />
 
-      <h2 className="font text-primary text-center zoom img-zoom">
-        Check out my collection!
-      </h2>
+      <div className="space">
+        <div className="row">
+          <div className="col-md-8">
+            <h2 className="font text-primary text-center">
+              Check my collection!
+            </h2>
+            <br />
+            <h4 className="text-center   ">
+              On this page you can see my work with different types of clothing.
+            </h4>
+          </div>
+          <div className="col-md-4">
+            <img src={Banner} alt="" className="banner w-100 img-hover" />
+          </div>
+        </div>
+      </div>
       <br />
-      <h4 className="text-center  zoom img-zoom">
-        On this page you can see my work with different types of clothing.
-      </h4>
-      <br />
-      <div className="row pt-5 zoom">
-        <div className="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-          <div className="m-2">
-            <video
-              className="rounded card-img-top"
-              muted
-              autoPlay
-              loop
-              style={{ objectFit: "cover", zIndex: -1 }}
-            >
-              <source src={video01} type="video/mp4" />
-            </video>
-          </div>
-        </div>
-
-        <div className="col-sm-12 col-md-4 col-lg-4 col-xl-4 img-zoom">
-          <div className="card m-2">
-            <img
-              style={{ cursor: "pointer" }}
-              onClick={() => handleClick(img01)}
-              src={img01}
-              alt="Product"
-              className="card img-fluid rounded-start img-hover"
-              height="700"
-            />
-          </div>
-        </div>
-
-        <div className="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-          <div className="m-2">
-            <video
-              className="rounded card-img-top"
-              muted
-              autoPlay
-              loop
-              style={{ objectFit: "cover", zIndex: -1 }}
-            >
-              <source src={video02} type="video/mp4" />
-            </video>
-          </div>
-        </div>
-
-        <div className="mb-3 mw-540 p-4 mt-5 img-zoom">
+      <div className="row zoom pt-5">
+        <div className="mb-3 mw-540">
           <div className="row g-0">
-            <div className="col-md-4">
+            <div className="col-md-5 img-zoom">
               <img
+                style={{ cursor: "pointer" }}
+                onClick={() => handleClick(img02)}
                 src={img02}
                 className="card img-fluid rounded-start img-hover"
                 alt="..."
               />
             </div>
-            <div className="col-md-8">
+            <div className="col-md-7">
               <div className="card-body text-align-center">
-                <div className="mt-5">
-                  <h2 className="font m-4 text-primary">Cowboy Oddaysey</h2>
+                <br />
+                <div className="">
+                  <h2 className="font text-primary mx-4">Cowboy Oddaysey</h2>
                   <br />
-                  <br />
-                  <h2 className="m-4">
+
+                  <h3 class="display-4 card-text mx-5 mt-3 text-black">
                     These are the clothes I designed for the collection,
                     featuring a variety of textures and colors to capture the
                     essence of cowboys with a fresh perspective and an original
                     narrative.
-                  </h2>
-
-                  <h3 class="display-4 card-text m-4 text-secondary">
-                    In the "work" section, you can view my complete project.
                   </h3>
                 </div>
+              </div>
+            </div>
+
+            <div className="col-sm-12 col-md-4 col-lg-4 col-xl-4 my-5">
+              <div className="m-2">
+                <video
+                  className="rounded card-img-top"
+                  muted
+                  autoPlay
+                  loop
+                  style={{ objectFit: "cover", zIndex: -1 }}
+                >
+                  <source src={video01} type="video/mp4" />
+                </video>
+              </div>
+            </div>
+
+            <div className="col-sm-12 col-md-4 col-lg-4 col-xl-4 my-5 img-zoom">
+              <div className="card m-2">
+                <img
+                  style={{ cursor: "pointer" }}
+                  onClick={() => handleClick(img01)}
+                  src={img01}
+                  alt="Product"
+                  className="card img-fluid rounded-start img-hover"
+                  height="700"
+                />
+              </div>
+            </div>
+
+            <div className="col-sm-12 col-md-4 col-lg-4 col-xl-4 my-5">
+              <div className="m-2">
+                <video
+                  className="rounded card-img-top"
+                  muted
+                  autoPlay
+                  loop
+                  style={{ objectFit: "cover", zIndex: -1 }}
+                >
+                  <source src={video02} type="video/mp4" />
+                </video>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="card cardmb-3 mw-540 p-5 mt-5 img-zoom">
+        <div className=" cardmb-3 mw-540">
           <div className="row g-0">
-            <div className="col-md-8">
+            <div className="col-md-7">
               <div className="card-body text-align-center pt-4">
                 <div className="">
-                  <h2 className="font">Fake Leather</h2>
-                  <h3 className=" m-4 text-secondary">
-                    With its unique mix of elements, this collection is sure to captivate and excite you!
-                  </h3>
-
-                  <h2 class="card-text m-4 display-4  text-primary">
-                    Intimity, dirty-work and rock&roll can you see in this collection lml
+                  <br />
+                  <br />
+                  <br />
+                  <h2 className="font text-primary mx-4">Fake Leather</h2>
+                  <h2 className="display-3 card-text m-5  text-black">
+                    Intimity, dirty-work and rock&roll can you see in this
+                    collection. With its unique mix of elements, this collection
+                    is sure to captivate and excite you!
                   </h2>
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-5">
               <video
-                className="rounded card-img-top"
+                className="rounded card-img-top card"
                 muted
                 autoPlay
                 loop
@@ -274,48 +278,56 @@ export const Clothes = () => {
           </div>
         </div>
       </div>
-      <div className="mb-4 mw-540 p-4 mt-5">
+      <div className="mb-3 mw-540  mt-5">
         <div className="row g-0">
-          <div className="card col-md-3 img-zoom">
+          <div className="col-md-5">
             <img
-              src={avatar03}
               style={{ cursor: "pointer" }}
-              onClick={() => handleClick(avatar03)}
-              className="img-fluid rounded-start img-hover"
+              onClick={() => handleClick(avatar01)}
+              src={avatar01}
+              className="card img-fluid rounded-start  my-5 img-zoom"
               alt="..."
             />
           </div>
-          <div className="col-md-6">
+          <div className="col-md-7">
             <div className="card-body text-align-center">
+              <br />
               <div className="mt-5">
-                <h2 className="font m-4 text-primary text-center">
-                  Avatars and Clothes
-                </h2>
-                <p className="display-6 m-4 text-center">
-                  Magics models and outfits
-                </p>
+                <h2 className="font text-primary mx-4">Avatars and Clothes</h2>
+                <br />
+
+                <h3 class="display-4 card-text mx-5 mt-3 text-black">
+                  Design of magics models and outfits. Usually for this tipes of
+                  wors, I used softwares how Daz3D or Marvelous Designer to make
+                  textures and trims.
+                </h3>
               </div>
             </div>
           </div>
-          <div className="card col-md-3">
+        </div>
+      </div>
+
+      <div>
+        <div className="row ">
+          <div className="col">
             <img
-              src={avatar01}
               style={{ cursor: "pointer" }}
-              onClick={() => handleClick(avatar01)}
-              className="card img-fluid rounded-start img-hover img-zoom"
+              onClick={() => handleClick(avatar02)}
+              className="card img-fluid rounded-start img-zoom"
+              src={avatar02}
+              alt=""
+            />
+          </div>
+          <div className="col-md-3">
+            <img
+              style={{ cursor: "pointer" }}
+              onClick={() => handleClick(avatar03)}
+              src={avatar03}
+              className="img-fluid rounded-start img-zoom"
               alt="..."
             />
           </div>
         </div>
-      </div>
-      <div>
-        <img
-          style={{ cursor: "pointer" }}
-          onClick={() => handleClick(avatar02)}
-          className="card img-fluid rounded-start img-zoom"
-          src={avatar02}
-          alt=""
-        />
       </div>
 
       <br />

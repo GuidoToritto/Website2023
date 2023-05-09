@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <header className="bg-primary">
+    <header className="bg-primary img-zoom">
       <Link to="/home">
         <div className="logo">
-          <img src={Logo} className="toritto" />
+          <img  src={Logo} className="toritto" />
         </div>
       </Link>
       <ul className="p-1">

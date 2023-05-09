@@ -8,11 +8,12 @@ import img02 from "../../images/home/02.png";
 import img03 from "../../images/home/vfinal_04.png";
 import Work from "./Work";
 import { Link } from "react-router-dom";
+import { Carousel } from "react-bootstrap";
 
 export const Home = () => {
   return (
     <div className="container pt-5 fade-out">
-      <div className="img-zoom space">
+      <div className="space">
         <p className="font text-center text-primary zoom">
           Welcome to
           <span className="color-font zoom "> littlebbull</span>
@@ -23,93 +24,47 @@ export const Home = () => {
           perspective on everything
         </h3>
       </div>
+      <br /><br />
+      <Carousel fade>
+        <Carousel.Item>
+          <img src={Banner} className="card d-block w-100" alt="" />
+          <Link/>
+          <Carousel.Caption>
+            <h5>Capitulo cuatro: Acuerdo</h5>
+            <p>
+              Tras querer aliviar el inmenso ardor de alguna herida, como un
+              diafragma que se abre...
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={Banner02} className="card d-block w-100" alt="" />
 
-      <br />
-      <br />
-      <div id="carouselExampleCaptions" className="carousel slide zoom ">
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src={Banner} className="d-block w-100" alt="" />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Capitulo cuatro: Acuerdo</h5>
-              <p>
-                Tras querer aliviar el inmenso ardor de alguna herida, como un
-                diafragma que se abre...
-              </p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img src={Banner02} className="d-block w-100" alt="" />{" "}
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Working togheter</h5>
-              <p>
-                I made this collab with the artist Anastasia Sitner , click here
-                to see more!
-              </p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img src={Banner03} className="d-block w-100" alt="" />{" "}
-            <div className="carousel-caption d-none d-md-block">
-              <h5>I exist because I'm thinking</h5>
-              <p>Self-portaid what I made with Blender and Daz3D</p>
-            </div>
-          </div>
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div className="card-group zoom">
-        <div className="card">
+          <Carousel.Caption>
+            <h5>Working togheter</h5>
+            <p>
+              I made this collab with the artist Anastasia Sitner , click here
+              to see more!
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={Banner03} className="card d-block w-100" alt="" />
+
+          <Carousel.Caption>
+            <h5>I exist because I'm thinking</h5>
+            <p>Self-portaid what I made with Blender and Daz3D</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+
+      <div className="card-group zoom pt-3">
+        <div className="card p-3">
           <link rel="stylesheet" href="" />
 
           <Link to="/work">
             <img
-              className="w-100"
+              className="w-100 card"
               src={img01}
               style={{ cursor: "pointer" }}
               alt=""
@@ -127,9 +82,9 @@ export const Home = () => {
             </p>
           </div>
         </div>
-        <div className="card">
+        <div className="card  p-3">
           <Link to="/clothes">
-            <img className="w-100" src={img03} alt="" />
+            <img className="w-100 card" src={img03} alt="" />
           </Link>
           <div className="card-body">
             <Link to="/clothes" style={{ textDecoration: "none" }}>
@@ -142,9 +97,9 @@ export const Home = () => {
             </p>
           </div>
         </div>
-        <div className="card">
+        <div className="card  p-3">
           <Link to="/work">
-            <img className="w-100" src={img02} alt="" />
+            <img className="w-100 card" src={img02} alt="" />
           </Link>
           <div className="card-body">
             <Link to="/work" style={{ textDecoration: "none" }}>
@@ -164,7 +119,7 @@ export const Home = () => {
       </div>
 
       <div className="container text-center zoom ">
-        <div className="row pt-5">
+        <div className="row ">
           <div className="col-sm-6 pt-5 mt-5">
             <div className="card img-zoom">
               <div className="card-body ">
@@ -178,10 +133,18 @@ export const Home = () => {
                   3D design. If you'd like to learn more about me, click the
                   buttons below!
                 </p>
-                <Link to="/about-me" className="card-link" style={{textDecoration:'none'}}>
+                <Link
+                  to="/about-me"
+                  className="card-link"
+                  style={{ textDecoration: "none" }}
+                >
                   More about
                 </Link>
-                <Link to="/work" style={{textDecoration:'none'}} className="card-link">
+                <Link
+                  to="/work"
+                  style={{ textDecoration: "none" }}
+                  className="card-link"
+                >
                   Works
                 </Link>
               </div>
@@ -199,19 +162,8 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="m-5 text-center mb w-18 img-zoom">
-        <div className="card-body">
-          <h5 className="card-title">Thank you for taking the time to view!</h5>
-          <p className="card-text">If you want to go up, push the button!</p>
-          <a href="#" className="btn btn-outline-primary">
-            Go up!
-          </a>
-        </div>
-        
-      </div>
-      
+      <div className="m-5 text-center mb w-18 img-zoom"></div>
     </div>
-    
   );
 };
 

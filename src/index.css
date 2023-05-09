@@ -1,26 +1,19 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
 
-body{
+body {
   background: whitesmoke;
-}
-
-.info {
-  padding: 20px;
-  position: fixed;
-  right: 1750px;
-  height: 100%;
 }
 
 .text {
   color: white;
   font-size: 30px;
-  font-family: 'Press Start 2P', cursive;
-  writing-mode: vertical-rl;
+  font-family: "Press Start 2P", cursive;
+  writing-mode: vertical-lr;
 }
 
 @keyframes slide-down-up {
@@ -38,17 +31,22 @@ body{
   animation: slide-down-up 10s linear infinite;
 }
 
+.info {
+  padding: 10px;
+  position: fixed;
+  right: 70px;
+  height: 100%;
+}
 
-header{
-  position: fixed; 
+header {
+  position: fixed;
   padding-top: 50px;
-  right: 20px;
+  right: 1750px;
   height: 107%;
   width: 120px;
 }
 
-
-li{
+li {
   margin-top: 20px;
   padding: 40px;
   font-size: 27px;
@@ -56,11 +54,10 @@ li{
   writing-mode: vertical-lr;
   text-decoration: none;
   list-style: none;
+  transform: rotate(180deg);
 }
 
-
-
-@keyframes header{
+@keyframes header {
   from {
     transform: translateX(-100%);
   }
@@ -68,39 +65,39 @@ li{
     transform: translateX(100%);
   }
 }
-a{
+
+a {
   color: whitesmoke;
   text-decoration: none;
 }
 
-.toritto{
+.toritto {
   width: 110%;
   margin-top: 40px;
-  margin-bottom: 70px;
-  transform: rotate(90deg);
+  margin-bottom: 50px;
+  padding-right: 10px;
+  transform: rotate(70deg);
 }
 
-a:hover{
+a:hover {
   opacity: 50%;
 }
 
-img:hover{
+img:hover {
   opacity: 50%;
 }
 
-.font{
+.font {
   font-size: 150px;
-  font-family: Helvetica, sans-serif ;
+  font-family: Helvetica, sans-serif;
   font-weight: bold;
   line-height: 0.8;
 }
 
-
 .color-font {
   color: white;
-  background-color: #316CF4;
+  background-color: #0d6efd;
   font-size: 110px;
-  
 }
 
 .fade-out {
@@ -112,18 +109,16 @@ img:hover{
 }
 
 .img-zoom {
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
 .img-zoom:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
   opacity: 1;
 }
 
-.img-hover:hover{
+.img-hover:hover {
   opacity: 1;
 }
-
-
 
 @keyframes zoomInOut {
   from {
@@ -134,7 +129,6 @@ img:hover{
   }
 }
 
-
 @keyframes fadeOut {
   from {
     opacity: 0;
@@ -144,58 +138,63 @@ img:hover{
   }
 }
 
-
-@media (max-width: 1594px) {
-
-  
-
-  .banner{
-    margin-top: 125px;
-  }
-
-  .space{
-    margin-top: 100px;
-  }
-  header{
-    position:absolute;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-left: 5%;
-    right: 0px;
-    left: 0px;
-    height: 13%;
-    width: 100%;
-  }
-
-  li{
-    padding: 0px;
-    margin: 0px;
-    font-size: 15px;
-    writing-mode: horizontal-tb;
-  }
-
-  .toritto{
-    width: 60px;
-    padding: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    transform: rotate(0deg);
-  }
-
-}
-
-@media (max-width: 767px){
-
+@media (max-width: 1670px) {
   .info {
     display: none;
   }
-  
+
   .text {
     display: none;
   }
-  
+
+  .banner {
+    margin-top: 125px;
+  }
+
+  .space {
+    margin-top: 200px;
+  }
+  header {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 25px;
+    padding-right: 0px;
+    padding-left:50px;
+    right: 0px;
+    left: 0px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  li {
+    padding: 0px;
+    margin: 0px;
+    font-size: 25px;
+    line-height: 25px;
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+  }
+
+  .toritto {
+    width: 110px;
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transform: rotate(15deg);
+  }
+}
+
+@media (max-width: 1314px) {
+  .info {
+    display: none;
+  }
+
+  .text {
+    display: none;
+  }
 
   @keyframes slide-down-up {
     0% {
@@ -207,13 +206,12 @@ img:hover{
       opacity: 1;
     }
   }
-  .font{
+  .font {
     font-size: 60px;
     line-height: 1;
     text-align: center;
   }
-  .color-font{
+  .color-font {
     font-size: 70px;
   }
 }
-

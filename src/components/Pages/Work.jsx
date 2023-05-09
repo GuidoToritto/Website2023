@@ -58,9 +58,9 @@ export const Work = () => {
           />
         </div>
       )}
-
-      <p className="font text-end zoom space">Cowboy Oddaysey</p>
-      <p className="text-end zoom space pt-3 display-6 text-secondary">
+      
+      <p className="font text-end  space">Cowboy Oddaysey</p>
+      <p className="text-end zoom display-6 text-secondary">
         Join me to watch this four-episode story.
       </p>
       <br />
@@ -150,8 +150,8 @@ export const Work = () => {
       <br />
       <br />
       <br />
-      <p className="font text-center zoom space">Awakening me</p>
-      <p className="text-center zoom space pt-3 display-6 text-secondary">
+      <p className="font text-center zoom">Awakening me</p>
+      <p className="text-center zoom pt-3 display-6 text-secondary">
         A collab with Anastasia Sitner
       </p>
       <br />
@@ -207,10 +207,10 @@ export const Work = () => {
         </div>
       </div>
 
-      <p className="font text-start zoom space pt-5">
+      <p className="font text-start zoom  pt-5">
         La violencia es una energía mal aprovechada.
       </p>
-      <p className="text-start zoom space pt-3 display-6 text-secondary">
+      <p className="text-start zoom  pt-3 display-6 text-secondary">
         Uno no puede prevenir lo inesperado. Uno no puede saber lo que va a
         ocurrir, lo que no se puede programar.
       </p>
@@ -262,7 +262,7 @@ export const Work = () => {
 
       <br />
 
-      <p className="font text-end zoom space pt-5">Portraids</p>
+      <p className="font text-end zoom  pt-5">Portraids</p>
       <br />
 
       <div className="row row-cols-1 row-cols-md-2 g-4 zoom">
@@ -316,13 +316,13 @@ export const Work = () => {
           style={{ cursor: "pointer" }}
         />
       </div>
-      <div className="mb-3 mw-540 p-4 img-zoom">
-        <div className="row g-0">
-          <div className="col-md-8">
-            <div className="card-body text-align-center">
+      <div className="mb-3 mw-540 p-4 ">
+        <div className="">
+          <div className="">
+            <div className="card-body text-center">
               <div className="mt-5">
                 <h2 className="font mt-4">SS 23 x Others</h2>
-                
+
                 <p className="display-6">
                   I'm working with various artists in Estupido Estudio project,
                   creating advertising for Other
@@ -338,7 +338,6 @@ export const Work = () => {
         height="100%"
         controls
       />
-      
 
       <div className="m-5 text-center mb w-18 img-zoom">
         <div className="card-body">
@@ -348,7 +347,6 @@ export const Work = () => {
             Go up!
           </a>
         </div>
-        
       </div>
     </div>
   );
