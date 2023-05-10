@@ -7,7 +7,7 @@ export const Header = () => {
     <header className="bg-primary img-zoom">
       <Link to="/home">
         <div className="logo">
-          <img alt="" src={Logo} className="toritto" />
+          <img src={Logo} alt="..." className="toritto" />
         </div>
       </Link>
       <ul className="p-1">
