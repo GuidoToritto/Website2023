@@ -17,10 +17,15 @@ import avatar01 from "../../images/clothes/AvatarAndClothes/01.png";
 import avatar02 from "../../images/clothes/AvatarAndClothes/02.png";
 import avatar03 from "../../images/clothes/AvatarAndClothes/03.gif";
 import video03 from "../../images/clothes/video03_1.mp4";
+import { useEffect } from 'react';
 
 export const Clothes = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleClick = (image) => {
     setSelectedImage(image);

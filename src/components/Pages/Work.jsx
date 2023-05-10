@@ -21,10 +21,15 @@ import portraid05 from "../../images/work/03/05.jpg";
 import portraid06 from "../../images/work/03/06.png";
 import video from "../../images/work/video.mp4";
 import ReactPlayer from "react-player";
+import { useEffect } from "react";
 
 export const Work = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleClick = (image) => {
     setSelectedImage(image);
@@ -52,13 +57,13 @@ export const Work = () => {
           onClick={() => setIsOpen(false)}
         >
           <img
-            class="hover"
+            class="hover card"
             src={selectedImage}
             style={{ maxHeight: "90vh", maxWidth: "90vw" }}
           />
         </div>
       )}
-      
+
       <p className="font text-end  space">Cowboy Oddaysey</p>
       <p className="text-end zoom display-6 text-secondary">
         Join me to watch this four-episode story.
@@ -69,6 +74,7 @@ export const Work = () => {
         <div className="col">
           <div className="card">
             <img
+              className="rounded-top"
               src={Cap1}
               alt=""
               onClick={() => handleClick(Cap1)}
@@ -93,6 +99,7 @@ export const Work = () => {
             <img
               src={Cap4}
               alt=""
+              className="rounded-top"
               onClick={() => handleClick(Cap4)}
               style={{ cursor: "pointer" }}
             />
@@ -113,6 +120,7 @@ export const Work = () => {
             <img
               src={Cap2}
               alt=""
+              className="rounded-top"
               onClick={() => handleClick(Cap2)}
               style={{ cursor: "pointer" }}
             />
@@ -131,6 +139,7 @@ export const Work = () => {
             <img
               src={Cap3}
               alt=""
+              className="rounded-top"
               onClick={() => handleClick(Cap3)}
               style={{ cursor: "pointer" }}
             />
@@ -162,6 +171,7 @@ export const Work = () => {
             <img
               src={ana02}
               alt=""
+              className="card"
               onClick={() => handleClick(ana02)}
               style={{ cursor: "pointer" }}
             />
@@ -172,6 +182,7 @@ export const Work = () => {
             <img
               src={ana03}
               alt=""
+              className="card"
               onClick={() => handleClick(ana03)}
               style={{ cursor: "pointer" }}
             />
@@ -182,6 +193,7 @@ export const Work = () => {
             <img
               src={ana06}
               alt=""
+              className="card"
               onClick={() => handleClick(ana06)}
               style={{ cursor: "pointer" }}
             />
@@ -192,6 +204,7 @@ export const Work = () => {
             <img
               src={ana04}
               alt=""
+              className="card"
               onClick={() => handleClick(ana04)}
               style={{ cursor: "pointer" }}
             />
@@ -200,6 +213,7 @@ export const Work = () => {
             <img
               src={ana05}
               alt=""
+              className="card"
               onClick={() => handleClick(ana05)}
               style={{ cursor: "pointer" }}
             />
@@ -223,6 +237,7 @@ export const Work = () => {
             <img
               src={ani01}
               alt=""
+              className="card"
               onClick={() => handleClick(ani01)}
               style={{ cursor: "pointer" }}
             />
@@ -233,6 +248,7 @@ export const Work = () => {
             <img
               src={ani02}
               alt=""
+              className="card"
               onClick={() => handleClick(ani02)}
               style={{ cursor: "pointer" }}
             />
@@ -243,6 +259,7 @@ export const Work = () => {
             <img
               src={ani03}
               alt=""
+              className="card"
               onClick={() => handleClick(ani03)}
               style={{ cursor: "pointer" }}
             />
@@ -253,6 +270,7 @@ export const Work = () => {
             <img
               src={ani04}
               alt=""
+              className="card"
               onClick={() => handleClick(ani04)}
               style={{ cursor: "pointer" }}
             />
@@ -271,6 +289,7 @@ export const Work = () => {
             <img
               src={portraid01}
               alt=""
+              className="card"
               onClick={() => handleClick(portraid01)}
               style={{ cursor: "pointer" }}
             />
@@ -281,6 +300,7 @@ export const Work = () => {
             <img
               src={portraid02}
               alt=""
+              className="card"
               onClick={() => handleClick(portraid02)}
               style={{ cursor: "pointer" }}
             />
@@ -291,6 +311,7 @@ export const Work = () => {
             <img
               src={portraid03}
               alt=""
+              className="card"
               onClick={() => handleClick(portraid03)}
               style={{ cursor: "pointer" }}
             />
@@ -301,6 +322,7 @@ export const Work = () => {
             <img
               src={portraid04}
               alt=""
+              className="card"
               onClick={() => handleClick(portraid04)}
               style={{ cursor: "pointer" }}
             />
@@ -312,6 +334,7 @@ export const Work = () => {
         <img
           src={portraid06}
           alt=""
+          className="card"
           onClick={() => handleClick(portraid06)}
           style={{ cursor: "pointer" }}
         />

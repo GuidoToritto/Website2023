@@ -9,8 +9,12 @@ import img03 from "../../images/home/vfinal_04.png";
 import Work from "./Work";
 import { Link } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
+import { useEffect } from "react";
 
 export const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="container pt-5 fade-out">
       <div className="space">

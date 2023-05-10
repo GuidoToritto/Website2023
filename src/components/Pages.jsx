@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
 import { AboutMe } from "./Pages/AboutMe";
 import { Home } from "./Pages/Home";
 import { Clothes } from "./Pages/Clothes";
@@ -10,6 +9,7 @@ export const Pages = () => {
   return (
     <section>
       <Routes>
+        
         <Route path="/" element={<Home/>}/>
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/home" element={<Home />} />
