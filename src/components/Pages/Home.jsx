@@ -24,7 +24,7 @@ export const Home = () => {
           's website
         </p>
         <h3 className="text-center text-secondary zoom pt-4">
-          On this amazing website, you can see inside me my feelings and my
+          On this amazing website, you can see inside me, my feelings and my
           perspective on everything
         </h3>
       </div>
@@ -34,8 +34,8 @@ export const Home = () => {
           <img src={Banner} className="card d-block w-100" alt="" />
           <Link/>
           <Carousel.Caption>
-            <h5>Capitulo cuatro: Acuerdo</h5>
-            <p>
+            <h5 className="carouseltext">Capitulo cuatro: Acuerdo</h5>
+            <p className="carouseltext">
               Tras querer aliviar el inmenso ardor de alguna herida, como un
               diafragma que se abre...
             </p>
@@ -45,8 +45,8 @@ export const Home = () => {
           <img src={Banner02} className="card d-block w-100" alt="" />
 
           <Carousel.Caption>
-            <h5>Working togheter</h5>
-            <p>
+            <h5 className="carouseltext">Working togheter</h5>
+            <p className="carouseltext">
               I made this collab with the artist Anastasia Sitner , click here
               to see more!
             </p>
@@ -56,8 +56,8 @@ export const Home = () => {
           <img src={Banner03} className="card d-block w-100" alt="" />
 
           <Carousel.Caption>
-            <h5>I exist because I'm thinking</h5>
-            <p>Self-portaid what I made with Blender and Daz3D</p>
+            <h5 className="carouseltext">I exist because I'm thinking</h5>
+            <p className="carouseltext">Self-portaid what I made with Blender and Daz3D</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
@@ -133,7 +133,7 @@ export const Home = () => {
 
                 <p className="card-text">
                   Hello! My name is Guido Toritto, and I'm from Buenos Aires,
-                  Argentina. I'm currently 26 years old and studying website and
+                  Argentina. I'm 26 years old and studying website and
                   3D design. If you'd like to learn more about me, click the
                   buttons below!
                 </p>

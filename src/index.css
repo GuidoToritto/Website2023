@@ -214,4 +214,8 @@ img:hover {
   .color-font {
     font-size: 70px;
   }
+
+  .carouseltext{
+    font-size: 13px;
+  }
 }
