@@ -70,7 +70,7 @@ export const Clothes = () => {
             </h2>
             <br />
             <h4 className="text-center   ">
-              On this page you can see my work with different types of clothing.
+              Can be seens in this collection my work and different types of clothing.
             </h4>
           </div>
           <div className="col-md-4">
@@ -161,7 +161,7 @@ export const Clothes = () => {
                   <br />
                   <h2 className="font text-primary mx-4">Fake Leather</h2>
                   <h2 className="display-3 card-text m-5  text-black">
-                    Intimity, dirty-work and rock&roll can you see in this
+                    Intimicy, dirty-work and rock&roll can you see in this
                     collection. With its unique mix of elements, this collection
                     is sure to captivate and excite you!
                   </h2>
@@ -302,8 +302,8 @@ export const Clothes = () => {
                 <br />
 
                 <h3 class="display-4 card-text mx-5 mt-3 text-black">
-                  Design of magics models and outfits. Usually for this tipes of
-                  wors, I used softwares how Daz3D or Marvelous Designer to make
+                  Design of magic models and outfits. Usually for this types of
+                  works, I used softwares like Daz3D or Marvelous Designer to make
                   textures and trims.
                 </h3>
               </div>
